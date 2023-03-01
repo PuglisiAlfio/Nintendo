@@ -1,0 +1,97 @@
+@use "variables.scss";
+
+$bg-color-logo: variables.$bg-color-logo;
+$text-color-logo: variables.$text-color-logo;
+$color-hover: variables.$color-hover;
+$link-color: variables.$link-color;
+$transition: variables.$transition;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(159, 159, 159);
+}
+
+.navbar-top-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    background-color: $bg-color-logo;
+    color: $text-color-logo;
+    padding: 1rem;
+}
+
+.logo span {
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 0.2rem;
+}
+
+.search {
+    display: flex;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+svg {
+    width: 1rem;
+}
+
+.search input, .search select, .search > svg, .link {
+    border: none;
+    margin: 0 1rem;
+
+    &:hover, &:hover::placeholder{
+        color: $color-hover;
+        transition: $transition;
+        fill: $color-hover
+    }
+}
+
+.navbar-top-right{
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    font-size: small;
+}
+
+.navbar-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    font-size: small;
+    border-bottom: 1px solid rgb(159, 159, 159);
+
+}
+
+.link > a{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+a{
+    text-decoration: none;
+    color: $link-color;
+
+    &:hover {
+        color: $color-hover;
+        transition: $transition;
+        fill: $color-hover
+    }
+}

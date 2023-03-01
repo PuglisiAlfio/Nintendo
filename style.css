@@ -1,1 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+}
 
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(159, 159, 159);
+}
+
+.navbar-top-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+}
+
+.logo span {
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+
+.search {
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+}
+
+svg {
+  width: 1rem;
+}
+
+.search input, .search select, .search > svg, .link {
+  border: none;
+  margin: 0 1rem;
+}
+.search input:hover, .search input:hover::placeholder, .search select:hover, .search select:hover::placeholder, .search > svg:hover, .search > svg:hover::placeholder, .link:hover, .link:hover::placeholder {
+  color: red;
+  transition: 0.5s;
+  fill: red;
+}
+
+.navbar-top-right {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  font-size: small;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  font-size: small;
+  border-bottom: 1px solid rgb(159, 159, 159);
+}
+
+.link > a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+  transition: 0.5s;
+  fill: red;
+}
+
+/*# sourceMappingURL=style.css.map */
